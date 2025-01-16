@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Inter", serif;
+  color: white;
+  background: #0E0F14;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 66px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  color: #7E859C;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+span {
+  font-size: 24px;
+  line-height: 38px;
+  color: #7E859C;
+}
+
+.media {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.vk {
+  background-color: #4690E3;
+  background-image: url("../img/vk.svg");
+}
+
+.vk:not(.card):hover {
+  background-color: rgba(70, 144, 227, 0.6);
+}
+
+.tg {
+  background-color: #4CB4EE;
+  background-image: url("../img/tg.svg");
+}
+
+.tg:not(.card):hover {
+  background-color: rgba(76, 180, 238, 0.6);
+}
+
+.wa {
+  background-color: #44CF78;
+  background-image: url("../img/wa.svg");
+}
+
+.wa:not(.card):hover {
+  background-color: rgba(68, 207, 120, 0.6);
+}
+
+.cardBlock .viewBox {
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 240px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.cardBlock a {
+  color: #ffffff;
+}
+
+.cardBlock .viewBox .bgCard {
+  position: absolute;
+  left: -5%;
+  top: -10%;
+  width: 110%;
+  height: 120%;
+  background-color: #15171F;
+  background-position: center;
+  background-size: cover;
+  transition: 0.2s;
+}
+
+.cardBlock h4 {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 5px 0;
+}
+
+.cardBlock h4 span.badge {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  height: 24px;
+  margin-left: 12px;
+  padding: 0 8px;
+  background: rgba(84, 196, 161, 0.1);
+  border-radius: 4px;
+  letter-spacing: 0.16em;
+}
+
+.cardBlock h4 span.badge.green {
+  background: rgba(84, 196, 161, 0.1);
+  color: #54C4A1;
+}
+
+.cardBlock h4 span.badge.blue {
+  background: rgba(53, 167, 231, 0.1);
+  color: #35A7E7;
+}
+
+.cardBlock h4 span.badge.orange {
+  background: rgba(255, 159, 70, 0.1);
+  color: #FF9F46;
+}
+
+.cardBlock h4 span.badge.red {
+  background: rgba(234, 73, 51, 0.1);
+  color: #EA4933;
+}
+
+.cardBlock span.description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
+header .menu a.active {
+  color: white;
+}
+
+header {
+  position: relative;
+  padding: 50px 0 100px 0;
+}
+
+header .menu a {
+  margin-right: 60px;
+}
+
+header .menu a:last-child {
+  margin-right: 0;
+}
+
+header h6 {
+  margin-right: 14px;
+}
+
+header .mediaBlock {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .mediaBlock span {
+  margin-right: 14px;
+}
+
+header .mediaBlock a {
+  margin-left: 10px;
+}
+
+header .mobileMenuRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1308px) {
+  header .menu a:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  header .mediaBlock {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 24px 0 40px 0 !important;
+  }
+
+  header img.logo {
+    width: 83px;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  header .mobileMenuRow .menuBtn {
+    display: block;
+  }
+}
+
+.mediaBlock.footer {
+  margin-top: 70px;
+  display: none;
+}
+
+.mediaBlock.footer h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.mediaBlock.footer a {
+  margin-right: 16px;
+}
+
+.moreBlock {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.moreBlock span.more {
+  margin-top: 50px;
+  font-size: 24px;
+  line-height: 38px;
+  color: white;
+}
+
+.moreBlock .arrowTop {
+  position: relative;
+}
+
+.moreBlock .arrowRoot {
+  margin-top: 25px;
+  width: 100%;
+  position: relative;
+}
+
+.moreBlock .arrowRoot .arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.moreBlock .arrowRoot .arrow.active line {
+  stroke-dasharray: 208;
+  stroke-dashoffset: 208;
+  transition: all 0.2s;
+}
+
+.moreBlock .arrowRoot .arrow.active path {
+  stroke-dasharray: 0 10;
+  stroke-dashoffset: 1;
+}
+
+.moreBlock:hover .arrow.active line {
+  stroke-dashoffset: 0 !important;
+}
+
+.moreBlock:hover .arrow.active path {
+  stroke-width: 2;
+  transition-delay: 0.2s;
+  stroke-dasharray: 18 10;
+  stroke-dashoffset: 28;
+  -webkit-animation: test 0.2s 1;
+  animation: test 0.2s 1;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.viewBox {
+  cursor: pointer;
+}
+
+.menuBtn {
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+  border: none;
+  background: #1C1E29 url("../img/menu-lines.svg") no-repeat center;
+  display: none;
+}
+
+.menuBtn:focus {
+  outline: none;
+}
+
+.mobilePanel {
+  transform: translateX(100%);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100%;
+  padding: 120px 0 0 32px;
+  background: #15171F;
+  transition: 0.3s;
+}
+
+.mobilePanel.active {
+  transform: translateX(0);
+}
+
+.mobilePanel a {
+  display: block;
+  font-size: 28px;
+  line-height: 36px;
+  padding-bottom: 40px;
+  color: white;
+}
+
+.mobilePanel .closePanelBtn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 45px;
+  height: 45px;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  background: #1C1E29 url("../img/close.svg") no-repeat center;
+}
+
+.mediaBlock.footer {
+  margin-bottom: 50px;
+}
+
+.mediaBlock.footer h6 {
+  line-height: 30px;
+}
+
+.mediaBlock.footer a {
+  width: 56px;
+  height: 56px;
+}
+
+.mediaCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  height: 220px;
+  width: 100%;
+  background: #15171F;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.mediaCard .card {
+  height: 72px;
+  width: 72px;
+  background-size: 33px;
+  margin-bottom: 25px;
+}
+
+.mediaCard div.link {
+  font-size: 24px;
+  line-height: 22px;
+  color: white;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+}
+
+.mediaCard:hover {
+  transform: translateY(-5px);
+}
+
+@media (min-width: 992px) {
+  .cardBlock .viewBox .bgCard.pcVideo {
+    background: none !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cardBlock .viewBox .bgCard video {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .title h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 14px;
+  }
+
+  .title span {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .title span span {
+    white-space: nowrap;
+  }
+
+  .cardBlock .viewBox {
+    margin-top: 25px;
+  }
+
+  .mediaBlock.footer {
+    display: block;
+  }
+
+  .moreBlock {
+    padding: 0;
+  }
+
+  header {
+    padding: 40px 0 60px 0;
+  }
+
+  .cardBlock .viewBox .bgCard.pcVideo video {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 24px;
+    margin: 0 -24px;
+    box-sizing: border-box;
+    width: calc(100% + 48px);
+    max-height: 500px;
+    overflow: scroll;
+  }
+
+  .scroll .scrollRow {
+    flex-wrap: nowrap;
+  }
+
+  .scroll .col-sm-6 {
+    padding: 0 8px;
+  }
+
+  .scroll .viewBox {
+    min-width: 240px;
+  }
+
+  .scroll h4 {
+    font-size: 20px;
+  }
+
+  .scroll span.badge {
+    font-size: 10px;
+  }
+
+  .moreBlockMobile {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .moreBlockMobile svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+
+  .moreBlockMobile svg path,
+  .moreBlockMobile svg line {
+    stroke-width: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .moreBlockMobile span {
+    font-size: 18px;
+    color: white;
+  }
+}
+
+@-webkit-keyframes test {
+  0% {
+    stroke-dasharray: 0 10;
+    stroke-dashoffset: 1;
+  }
+
+  50% {
+    stroke-dasharray: 8.5 10;
+    stroke-dashoffset: 14;
+  }
+
+  100% {
+    stroke-dasharray: 18 10;
+    stroke-dashoffset: 28;
+  }
+}
